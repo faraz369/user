@@ -98,9 +98,9 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'newdb',
+        'NAME': 'azure',
         'USER': 'admin',
-        'PASSWORD': 'admin',
+        'PASSWORD': 'admin1',
         'HOST': 'localhost',
         'PORT': '5432',
     }

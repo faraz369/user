@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
-from .models import User, Blog
+from .models import User
 # from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 
@@ -43,8 +43,6 @@ class UserTokenSerializer(serializers.Serializer):
 #         token['Email'] = user.email
 #         return token
 
-
-class BlogSerializer(ModelSerializer):
     # def to_representation(self, instance):
         # ret = super().to_representation(instance)
         # firstname = instance.author.firstname
@@ -59,9 +57,9 @@ class BlogSerializer(ModelSerializer):
     # author = serializers.SerializerMethodField()
     # username = serializers.SerializerMethodField('get_username_from_author')
     # blogs = serializers.StringRelatedField(many=True)
-    class Meta:
-        model = BlogBlog
-        fields = '__all__'
+    # class Meta:
+    #     model = Blog
+    #     fields = '__all__'
 
     # def get_firstname_from_author(self,Blog):
     #     firstname = Blog.author.firstname
